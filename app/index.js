@@ -22,15 +22,25 @@ PlanbGenerator.prototype.askFor = function askFor() {
     // Welcome message
     console.log(this.yeoman);
 
-    var prompts = [{
-        type: 'confirm',
-        name: 'someOption',
-        message: 'Would you like to enable this option?',
-        default: true
-    }];
+    var prompts = [
+        {
+            type : 'input',
+            name : 'projectName',
+            message : 'Qual o nome do projeto?',
+            validate : function (input) {
+                return (input.length) ? true : 'Informe o nome do projeto'
+            }
+        },
+        {
+            type : 'input',
+            name : 'projectDescription',
+            message : 'Qual a descricao do projeto?'
+        }
+    ];
 
     this.prompt(prompts, function (props) {
-        this.someOption = props.someOption;
+        this.projectName = props.projectName;
+        this.projectDescription = props.projectDescription;
 
         cb();
     }.bind(this));
@@ -58,20 +68,20 @@ PlanbGenerator.prototype.images = function images() {
 };
 
 PlanbGenerator.prototype.styles = function styles() {
-    this.copy('assets/scss/_main.scss', 'assets/scss/main.scss');
+    this.template('assets/scss/_main.scss', 'assets/scss/main.scss');
 };
 
 PlanbGenerator.prototype.scripts = function scripts() {
-    this.copy('assets/js/_main.js', 'assets/js/main.js');
+    this.template('assets/js/_main.js', 'assets/js/main.js');
 };
 
 PlanbGenerator.prototype.projectfiles = function projectfiles() {
-    this.copy('_index.html', 'index.html');
-    this.copy('_404.html', '404.html');
+    this.template('_index.html', 'index.html');
+    this.template('_404.html', '404.html');
 
-    this.copy('_package.json', 'package.json');
-    this.copy('_bower.json', 'bower.json');
-    this.copy('_humans.txt', 'humans.txt');
+    this.template('_package.json', 'package.json');
+    this.template('_bower.json', 'bower.json');
+    this.template('_humans.txt', 'humans.txt');
 
     this.copy('editorconfig', '.editorconfig');
     this.copy('gitignore', '.gitignore');
