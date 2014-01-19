@@ -1,5 +1,15 @@
 {
-  "name": "<%= _.slugify(projectName) %>",
-  "version": "0.0.0",
-  "dependencies": {}
+    "name": "<%= _.slugify(projectName) %>",
+    "version": "0.0.0",
+    <% if (projectDescription.length) { %>
+    "description": "<%= projectDescription %>",
+    <% } %>
+    <% if (clientName.length) { %>
+    "repository": {
+        "type": "git",
+        "url": "https://git.planb.com.br/<%= _.slugify(clientName) %>/<%= _.slugify(projectName) %>.git"
+    },
+    <% } %>
+    "devDependencies": {},
+    "license": "MIT",
 }

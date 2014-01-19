@@ -35,12 +35,18 @@ PlanbGenerator.prototype.askFor = function askFor() {
             type : 'input',
             name : 'projectDescription',
             message : 'Qual a descricao do projeto?'
+        },
+        {
+            type : 'input',
+            name : 'clientName',
+            message : 'Qual o nome do cliente deste projeto?'
         }
     ];
 
     this.prompt(prompts, function (props) {
         this.projectName = props.projectName;
         this.projectDescription = props.projectDescription;
+        this.clientName = props.clientName;
 
         cb();
     }.bind(this));
