@@ -69,6 +69,7 @@ PlanbGenerator.prototype.images = function images() {
 
 PlanbGenerator.prototype.styles = function styles() {
     this.template('assets/scss/_main.scss', 'assets/scss/main.scss');
+    this.copy('assets/css/main.css', 'assets/css/main.css');
 };
 
 PlanbGenerator.prototype.scripts = function scripts() {
