@@ -84,6 +84,7 @@ PlanbGenerator.prototype.projectfiles = function projectfiles() {
     this.template('_humans.txt', 'humans.txt');
 
     this.copy('editorconfig', '.editorconfig');
+    this.copy('gitattributes', '.gitattributes');
     this.copy('gitignore', '.gitignore');
     this.copy('htaccess', '.htaccess');
     this.copy('jshintrc', '.jshintrc');
