@@ -5,17 +5,17 @@
   "keywords": [
     "yeoman-generator"
   ],
-  "homepage": "https://github.com/gabrielizaias/generator-planb",
-  "bugs": "https://github.com/gabrielizaias/generator-planb/issues",
+  "homepage": "https://github.com/PlanBCom/generator-planb",
+  "bugs": "https://github.com/PlanBCom/generator-planb/issues",
   "author": {
     "name": "Gabriel Izaias",
     "email": "gabriel.izaias@gmail.com",
-    "url": "https://github.com/gabrielizaias"
+    "url": "https://github.com/PlanBCom"
   },
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/gabrielizaias/generator-planb.git"
+    "url": "git://github.com/PlanBCom/generator-planb.git"
   },
   "scripts": {
     "test": "mocha"

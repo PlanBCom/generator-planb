@@ -1,4 +1,4 @@
-# generator-planb [![Build Status](https://secure.travis-ci.org/gabrielizaias/generator-planb.png?branch=master)](https://travis-ci.org/gabrielizaias/generator-planb)
+# generator-planb [![Build Status](https://secure.travis-ci.org/PlanBCom/generator-planb.png?branch=master)](https://travis-ci.org/PlanBCom/generator-planb)
 
 A generator for [Yeoman](http://yeoman.io).
 
