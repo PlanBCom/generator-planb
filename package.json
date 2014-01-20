@@ -1,12 +1,12 @@
 {
   "name": "generator-planb",
-  "version": "0.0.0",
-  "description": "A generator for Yeoman",
+  "version": "0.1.0",
+  "description": "Yeoman generator para os projetos web da Plan B",
   "keywords": [
     "yeoman-generator"
   ],
-  "homepage": "https://github.com/gabrielizaias/generator-planb",
-  "bugs": "https://github.com/gabrielizaias/generator-planb/issues",
+  "homepage": "https://github.com/PlanBCom/generator-planb",
+  "bugs": "https://github.com/PlanBCom/generator-planb/issues",
   "author": {
     "name": "Gabriel Izaias",
     "email": "gabriel.izaias@gmail.com",
@@ -15,7 +15,7 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/gabrielizaias/generator-planb.git"
+    "url": "git://github.com/PlanBCom/generator-planb.git"
   },
   "scripts": {
     "test": "mocha"
