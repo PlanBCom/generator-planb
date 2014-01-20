@@ -10,6 +10,10 @@
         "url": "https://git.planb.com.br/<%= _.slugify(clientName) %>/<%= _.slugify(projectName) %>.git"
     },
     <% } %>
-    "devDependencies": {},
+    "devDependencies": {
+        "gulp": "~3.4.0"
+        "gulp-bump": "~0.1.0",
+        "gulp-ruby-sass": "~0.2.0"
+    },
     "license": "MIT",
 }
