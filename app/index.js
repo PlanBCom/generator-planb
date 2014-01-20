@@ -89,7 +89,7 @@ PlanbGenerator.prototype.projectfiles = function projectfiles() {
     this.template('_package.json', 'package.json');
     this.template('_bower.json', 'bower.json');
     this.template('_humans.txt', 'humans.txt');
-    this.template('_gulpfile.js', 'gulpfile.js');
+    this.template('gulpfile.js', 'gulpfile.js');
 
     this.copy('editorconfig', '.editorconfig');
     this.copy('gitattributes', '.gitattributes');
