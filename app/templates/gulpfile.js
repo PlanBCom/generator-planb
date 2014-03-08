@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 gulp.task('sass', function () {
     gulp.src('./assets/scss/*.scss')
         .pipe(sass({
-            style : 'compressed'
+            style : 'nested'
         }))
         .pipe(gulp.dest('./assets/css'));
 });
