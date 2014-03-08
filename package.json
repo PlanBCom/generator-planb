@@ -1,6 +1,6 @@
 {
   "name": "generator-planb",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Yeoman generator para os projetos web da Plan B",
   "keywords": [
     "yeoman-generator"
